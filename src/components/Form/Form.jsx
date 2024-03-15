@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Form.css';
 import { useTelegram } from '../../hooks/useTelegram';
 
@@ -27,11 +27,11 @@ const Form = () => {
     }
 
     const onChangeStreet = (e) => {
-        setCountry(e.target.value)
+        setStreet(e.target.value)
     }
 
     const onChangeSubject = (e) => {
-        setCountry(e.target.value)
+        setSubject(e.target.value)
     }
 
     return (
